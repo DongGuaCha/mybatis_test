@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mybatis_test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mybatis_test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="317_day17"/>
+    <schema id="4" parent="1" name="317_day18"/>
+    <schema id="5" parent="1" name="317_day19"/>
+    <schema id="6" parent="1" name="317_day20"/>
+    <schema id="7" parent="1" name="317_day21"/>
+    <schema id="8" parent="1" name="bookstore"/>
+    <schema id="9" parent="1" name="crm"/>
+    <schema id="10" parent="1" name="crmssh"/>
+    <schema id="11" parent="1" name="day17"/>
+    <schema id="12" parent="1" name="day19"/>
+    <schema id="13" parent="1" name="day36"/>
+    <schema id="14" parent="1" name="day42"/>
+    <schema id="15" parent="1" name="gjp"/>
+    <schema id="16" parent="1" name="hiberate_01"/>
+    <schema id="17" parent="1" name="hibernateday03"/>
+    <schema id="18" parent="1" name="hibernateday04"/>
+    <schema id="19" parent="1" name="hibernate_263_day1"/>
+    <schema id="20" parent="1" name="hibernate_263_day2"/>
+    <schema id="21" parent="1" name="hibernate_263_day4_annotation"/>
+    <schema id="22" parent="1" name="hibernate_317"/>
+    <schema id="23" parent="1" name="hibernate_my_day1"/>
+    <schema id="24" parent="1" name="hibernate_my_day3"/>
+    <schema id="25" parent="1" name="information_schema"/>
+    <schema id="26" parent="1" name="itheima"/>
+    <schema id="27" parent="1" name="jk_export"/>
+    <schema id="28" parent="1" name="lucene"/>
+    <schema id="29" parent="1" name="mybatis"/>
+    <schema id="30" parent="1" name="mysql"/>
+    <schema id="31" parent="1" name="mytest"/>
+    <schema id="32" parent="1" name="performance_schema"/>
+    <schema id="33" parent="1" name="springmvc"/>
+    <schema id="34" parent="1" name="ssh_demo1"/>
+    <schema id="35" parent="1" name="ssh_test"/>
+    <schema id="36" parent="1" name="store"/>
+    <schema id="37" parent="1" name="store0507"/>
+    <schema id="38" parent="1" name="store_317"/>
+    <schema id="39" parent="1" name="store_40"/>
+    <schema id="40" parent="1" name="struts_crm_day2"/>
+    <schema id="41" parent="1" name="taotao"/>
+    <schema id="42" parent="1" name="test"/>
+    <schema id="43" parent="1" name="test1"/>
+    <schema id="44" parent="1" name="test11"/>
+    <schema id="45" parent="1" name="test2"/>
+    <schema id="46" parent="1" name="web30"/>
+    <schema id="47" parent="1" name="web32"/>
+    <schema id="48" parent="1" name="web34"/>
+    <schema id="49" parent="1" name="web_test1"/>
+    <table id="50" parent="2" name="blog"/>
+    <table id="51" parent="2" name="user"/>
+    <column id="52" parent="50" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="50" name="author">
+      <Position>2</Position>
+      <Comment>作者</Comment>
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="50" name="title">
+      <Position>3</Position>
+      <Comment>博客标题</Comment>
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="55" parent="50" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="56" parent="51" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="57" parent="51" name="username">
+      <Position>2</Position>
+      <Comment>用户名称</Comment>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="51" name="birthday">
+      <Position>3</Position>
+      <Comment>生日</Comment>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="59" parent="51" name="sex">
+      <Position>4</Position>
+      <Comment>性别</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="60" parent="51" name="address">
+      <Position>5</Position>
+      <Comment>地址</Comment>
+      <DataType>varchar(256)|0</DataType>
+    </column>
+    <key id="61" parent="51" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
