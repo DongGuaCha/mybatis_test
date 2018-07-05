@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4db3387-ccfa-427b-b8ca-3b359d5ccb66" name="Default" comment="" />
+    <list default="true" id="f4db3387-ccfa-427b-b8ca-3b359d5ccb66" name="Default" comment="test">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/mybatis02_generator/mybatis02_generator.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/mybatis02_generator/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/mybatis02_main/mybatis02_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis_test/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis_test/.idea/misc.xml" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis_test/.idea/modules.xml" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis_test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/../mybatis_test/mybatis_main01/target/" />
     <ignored path="$PROJECT_DIR$/../mybatis_test/mybatis_main/target/" />
     <ignored path="$PROJECT_DIR$/../mybatis_test/target/" />
     <ignored path="$PROJECT_DIR$/../mybatis_test/mybatis_spring/target/" />
     <ignored path="$PROJECT_DIR$/../mybatis_test/mybatis02_main/target/" />
+    <ignored path="$PROJECT_DIR$/../mybatis_test/mybatis02_generator/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +72,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../mybatis_test/mybatis02_main/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../mybatis_test/mybatis02_generator/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -112,6 +131,7 @@
         <option value="$PROJECT_DIR$/../mybatis_test/mybatis_main/pom.xml" />
         <option value="$PROJECT_DIR$/../mybatis_test/mybatis_spring/pom.xml" />
         <option value="$PROJECT_DIR$/../mybatis_test/mybatis02_main/pom.xml" />
+        <option value="$PROJECT_DIR$/../mybatis_test/mybatis02_generator/pom.xml" />
       </list>
     </option>
   </component>
@@ -540,7 +560,7 @@
       <workItem from="1530760086149" duration="2881000" />
       <workItem from="1530765857591" duration="2065000" />
       <workItem from="1530768156860" duration="4437000" />
-      <workItem from="1530774714602" duration="3704000" />
+      <workItem from="1530774714602" duration="4274000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1530774133067</created>
@@ -591,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530778999672</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test">
+      <created>1530779011355</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1530779011355</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -627,7 +654,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35171000" />
+    <option name="totallyTimeSpent" value="35741000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,11 +674,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21967213" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.115733735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21967213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21967213" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -691,13 +718,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../mybatis_test/mybatis_main/src/main/resources/sqlmap/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../mybatis_test/mybatis_main/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1036,6 +1056,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../mybatis_test/mybatis02_main/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mybatis_test/mybatis02_generator/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/../mybatis_test/mybatis_main/pom.xml" />
         <option value="$PROJECT_DIR$/../mybatis_test/mybatis_spring/pom.xml" />
         <option value="$PROJECT_DIR$/../mybatis_test/mybatis02_main/pom.xml" />
+        <option value="$PROJECT_DIR$/../mybatis_test/mybatis02_generator/pom.xml" />
       </list>
     </option>
   </component>
