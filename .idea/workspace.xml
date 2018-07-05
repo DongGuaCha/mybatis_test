@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4db3387-ccfa-427b-b8ca-3b359d5ccb66" name="Default" comment="test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/dataSources/25805c8c-2a79-4be5-a77b-8d59461b14ed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/libraries/Maven__org_mybatis_mybatis_3_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../mybatis_test/mybatis02_main/pom.xml" />
-    </list>
+    <list default="true" id="f4db3387-ccfa-427b-b8ca-3b359d5ccb66" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/../mybatis_test/mybatis_main01/target/" />
     <ignored path="$PROJECT_DIR$/../mybatis_test/mybatis_main/target/" />
     <ignored path="$PROJECT_DIR$/../mybatis_test/target/" />
@@ -555,7 +540,7 @@
       <workItem from="1530760086149" duration="2881000" />
       <workItem from="1530765857591" duration="2065000" />
       <workItem from="1530768156860" duration="4437000" />
-      <workItem from="1530774714602" duration="3689000" />
+      <workItem from="1530774714602" duration="3704000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1530774133067</created>
@@ -599,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530778624039</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test">
+      <created>1530778999672</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1530778999672</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -635,7 +627,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35156000" />
+    <option name="totallyTimeSpent" value="35171000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
