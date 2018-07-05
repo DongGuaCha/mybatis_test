@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 根标签：配置 -->
+<configuration>
+	<!-- 
+		properties属性配置
+		resource：加载classpath下的属性文件
+		注意：外部映入的资源文件优先级高于子标签property配置的优先级
+	 -->
+	<properties resource="db.properties">
+		<property name="jdbc.username=" value="root"/>
+	</properties>
+	
+	<typeAliases>
+		<!-- 注意：类型别名不区分大小写 -->
+		<!-- <typeAlias type="com.itheima.mybatis.pojo.User" alias="user"/> -->
+		<!-- package批量定义别名，别名即类名 
+			注意：会扫描包和子包，注意重名的问题
+		-->
+		<package name="com.itheima.mybatis.pojo"/>
+	</typeAliases>
+	<!--  environments 数据源环境配置
+		default:默认使用的数据源环境，类似于一个开关
+	-->
+	<environments default="produce">
+		<!-- 开发用数据源环境 -->
+		<environment id="development">
+			<!-- 
+				transactionManager：事务管理器
+				type="JDBC"：使用JDBC的事务机制，connection的事务机制
+				type="MANAGERED"：Mybatis不管理事务，交由外部框架管理，比如spring
+			 -->
+			<transactionManager type="JDBC" />
+			<!-- 
+				dataSource：数据源
+				type="POOLED"：使用数据库连接池
+				type="UNPOOLED"：不使用数据库连接池
+			 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url"
+					value="jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf-8" />
+				<property name="username" value="root" />
+				<property name="password" value="root" />
+			</dataSource>
+		</environment>
+		<!-- 测试用数据源环境 -->
+		<environment id="test">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url"
+					value="jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf-8" />
+				<property name="username" value="root" />
+				<property name="password" value="root" />
+			</dataSource>
+		</environment>
+		<!-- 生产用数据源环境 -->
+		<environment id="produce">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driver}" />
+				<property name="url"
+					value="${jdbc.url}" />
+				<property name="username" value="${jdbc.username}" />
+				<property name="password" value="${jdbc.password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<!-- 关联sql映射文件 -->
+	<mappers>
+		<!-- resource加载classpath下的sql映射文件 -->
+		<mapper resource="sqlmap/UserMapper.xml"/>
+		<!-- <mapper resource="mapper/UserMapper.xml"/> -->
+		
+		<!-- 	
+			扫描class最终还是要找到xml的映射文件，所以必须满足两个规则
+			1、sql映射文件和mapper接口在同一个目录
+			2、sql映射文件名称和mapper接口一致
+		 -->
+		<!-- <mapper class="com.itheima.mybatis.mapper.UserMapper"/> -->
+		<!-- 
+			注意：package底层还是走mapper的class方式，所以和class加载要求一样
+		 -->
+		<package name="com.itheima.mybatis.mapper"/>
+	</mappers>
+</configuration>
+
+
+ <!-- (properties?, settings?, typeAliases?, typeHandlers?, objectFactory?, 
+ objectWrapperFactory?, plugins?, environments?, databaseIdProvider?, mappers?)
+ properties：属性配置信息
+ typeAliases：类型别名
+ mappers:加载sql映射文件
+  -->

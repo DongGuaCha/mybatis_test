@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 映射器，里面存放sql语句 -->
+<!-- 
+	namespace：分类管理sql语句
+	namespace + “.” + sql语句的id 来唯一的锁定一条sql语句
+ -->
+<mapper namespace="test">
+	<!-- 
+		查询语句使用select标签
+		id：sql语句标识符，通常也称为statement的id
+		parameterType：参数类型（输入映射）
+		resultType：结果类型（输出映射），配置为java的pojo，那么mybatis框架会把结果集中的每一条（单条）记录封装为指定的pojo对象
+	 -->
+	<select id="queryUserById" parameterType="int" resultType="user" >
+		<!-- 
+			具体执行的sql语句
+			#{}：固定取参语法
+			#{}取参名称：当parameterType传入简单数据类型的时候，参数名称任意，但是建议要见名思意
+					当parameterType传入pojo的时候，参数名称为属性名
+			#{}原理：底层是preparedstatement预编译语句（性能、安全防止sql注入）
+			#{}会自动给字符串参数添加一对单引号
+		 -->
+		select * from user where id=#{id}
+	</select>
+	
+	<!-- 
+		注意：resultType返回多条记录的时候，配置和返回单条记录一致，mybatis会自动以list集合返回
+	 -->
+	<select id="queryUserByUsername" parameterType="String" resultType="com.itheima.mybatis.pojo.User">
+		select * from user where username like #{username}
+	</select>
+	
+	<!-- 
+		另外一种取参方式${}
+	 -->
+	<select id="queryUserByUsername2" parameterType="String" resultType="com.itheima.mybatis.pojo.User">
+		
+		<!-- 
+			${}固定取参语法
+			${}取参名称：当parameterType传入简单数据类型的时候，参数名称必须为value字符串
+						当parameterType传入pojo的时候，参数名称为属性名
+			${}原理：简单的字符串拼接
+			${}不会自动给字符串参数添加单引号对
+		 -->
+		 <!-- 
+		 	#{}和${}选择原则：
+		 	一般使用#（因为性能和安全），特殊情况使用$（参数为数据库对象，比如表名或者order by的字段，不希望自动加单引号对）
+		  -->
+		select * from user where username like ${value}
+	</select>	 
+	 
+	<insert id="saveUser" parameterType="com.itheima.mybatis.pojo.User">
+		<!-- 
+			selectKey：用于返回主键
+			order：主键查询语句在insert之前还是之后 AFTER/BEFORE
+			keyProperty:主键查询出来之后回显到pojo的哪个属性
+			resultType：查询出来的主键的数据类型
+		 -->
+		<selectKey order="AFTER" keyProperty="id" resultType="Integer">
+			select last_insert_id()
+		</selectKey>
+		insert into user(username,sex,birthday,address)
+			values(#{username},#{sex},#{birthday},#{address})
+	</insert>
+	
+	<update id="updateUserById" parameterType="com.itheima.mybatis.pojo.User">
+		update user set username=#{username} where id=#{id}
+	</update>
+	
+	<delete id="deleteUserById" parameterType="Integer">
+		delete from user where id=#{id}
+	</delete>
+	
+</mapper>
